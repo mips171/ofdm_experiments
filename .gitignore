@@ -83,3 +83,5 @@ octave-workspace
 .history
 
 # End of https://www.gitignore.io/api/c++,matlab,visualstudiocode
+
+*.bmp

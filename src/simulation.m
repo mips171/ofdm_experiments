@@ -1,13 +1,15 @@
 % supress octave warnings
 warning('off', 'all');
-ALLOW_REPEATING_SNR_VALUES = false;
+ALLOW_REPEATING_SNR_VALUES = true;
 
-NUMBER_OF_TRIALS = 10;
+NUMBER_OF_TRIALS = 100;
+MIN_SNR = -3;
+MAX_SNR = 30;
 
 if ALLOW_REPEATING_SNR_VALUES 
     % allow repeating random numbers, to be more realistic
     % Define modulation order
-    RANDOM_SNR = randi([-3 30], 1, NUMBER_OF_TRIALS);
+    RANDOM_SNR = randi([MIN_SNR MAX_SNR], 1, NUMBER_OF_TRIALS);
 else 
     % get non-reapeating random numbers so the charts work (must be run from octave gui)
     randn();
