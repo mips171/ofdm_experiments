@@ -17,7 +17,7 @@ function [ output ] = signal_gen( SNR_simulated, MODULATION_ORDER )
     % Waveform params
     N_OFDM_SYMS             = 500;         % Number of OFDM symbols
     % use dynamic MOD_ORDER
-    MOD_ORDER = MODULATION_ORDER
+    MOD_ORDER               = MODULATION_ORDER;
     %MOD_ORDER               = 64;           % Modulation order (2/4/16/64 = BSPK/QPSK/16-QAM/64-QAM)
     TX_SCALE                = 1.0;         % Scale for Tx waveform ([0:1]) (TX gain)
 

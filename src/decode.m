@@ -19,7 +19,7 @@ function [ SNR_decoded_dB , BER_decoded ] = decode( SNR_simulated, MODULATION_OR
     N_OFDM_SYMS             = 500;         % Number of OFDM symbols
     %MOD_ORDER               = 64;           % Modulation order (2/4/16/64 = BSPK/QPSK/16-QAM/64-QAM)
     % use dynamic MOD_ORDER
-    MOD_ORDER = MODULATION_ORDER
+    MOD_ORDER               = MODULATION_ORDER;
 
     TX_SCALE                = 1.0;         % Scale for Tx waveform ([0:1]) (TX gain)
 
