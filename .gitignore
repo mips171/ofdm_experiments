@@ -2,6 +2,9 @@
 # Created by https://www.gitignore.io/api/c++,matlab,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=c++,matlab,visualstudiocode
 
+**/out
+# binary files
+
 ### C++ ###
 # Prerequisites
 *.d
@@ -35,6 +38,7 @@
 *.exe
 *.out
 *.app
+*.bin
 
 ### MATLAB ###
 # Windows default autosave extension
